@@ -16,3 +16,8 @@
     >Mover a chave privada e copiar a chave pública para um diretório padrão ou de sua escolha
     
     >AWS > EC2 > Key Pairs > Import Key Pair (chave pública criada anteriormente)
+
+## Deploy
+- `terraform init` iniciar/configurar diretório
+- `terraform plan` planejamento do deploy
+- `terraform apply` deploy planejamento
