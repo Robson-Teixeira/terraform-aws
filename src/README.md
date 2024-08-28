@@ -25,3 +25,5 @@
 ## Configurações
 - [AWS Security Group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)
 - `terraform show` listar detalhes do ambiente
+- `aws ec2 describe-security-groups` listar security groups
+>Para realização de SSH, selecionar um instância > Connect > (utilizar linha de comando exemplificada no terminal alterando o arquivo .pem para o diretório/arquivo em que se encontra a chave privada)
