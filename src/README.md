@@ -21,3 +21,6 @@
 - `terraform init` iniciar/configurar diretório
 - `terraform plan` planejamento do deploy
 - `terraform apply` deploy planejamento
+
+## Configurações
+- [AWS Security Group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)
