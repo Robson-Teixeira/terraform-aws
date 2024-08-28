@@ -11,6 +11,7 @@ resource "aws_instance" "dev" {
   tags = {
     Name = "dev${count.index}" //Variável count concatenada com o índice
   }
+  vpc_security_group_ids = ["ID1", "ID2"] #ID do acesso-ssh criado abaixo
 }
 
 resource "aws_security_group" "acesso-ssh" {

@@ -24,3 +24,4 @@
 
 ## Configurações
 - [AWS Security Group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)
+- `terraform show` listar detalhes do ambiente
