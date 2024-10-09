@@ -47,6 +47,7 @@ resource "aws_instance" "dev4" {
     Name = "dev4"
   }
   vpc_security_group_ids = ["${aws_security_group.acesso-ssh.id}"]
+  depends_on = ["aws_s3_bucket.dev4"] // Dependência entre recursos. Criação/exclusão de um implica respectivamente no outro.
 }
 
 resource "aws_instance" "dev5" {  
