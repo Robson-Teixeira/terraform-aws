@@ -31,6 +31,8 @@
 ## Gerenciamento
 - `terraform destroy` remover todos os recursos
     - `terraform destroy -target <nome.recurso>` remover o recurso especificado, por exemplo, 'aws_instance.dev7'
->Removendo um recurso com dependência, ambos serão removidos!
+    >Removendo um recurso com dependência, ambos serão removidos!
 
->Outra forma de remoção é alterar o(s) arquivo(s) removendo ou comentando os recursos e aplicar as alterações
+    >Outra forma de remoção é alterar o(s) arquivo(s) removendo ou comentando os recursos e aplicar as alterações
+
+- `terraform refresh` atualizar configurações do ambiente
