@@ -11,7 +11,7 @@ provider "aws" {
 
 resource "aws_instance" "dev" {
   count = 3 //Número de máquinas
-  ami = "ami-0e86e20dae9224db8" //Amazon Machine Image
+  ami = var.amis["us-east-1"] //Amazon Machine Image
   instance_type = "t2.micro"
   key_name = "terraform-aws"
   tags = {
@@ -30,7 +30,7 @@ resource "aws_s3_bucket" "dev4" {
 }
 
 resource "aws_instance" "dev4" {  
-  ami = "ami-0e86e20dae9224db8"
+  ami = var.amis["us-east-1"]
   instance_type = "t2.micro"
   key_name = "terraform-aws"
   tags = {
@@ -41,7 +41,7 @@ resource "aws_instance" "dev4" {
 }
 
 resource "aws_instance" "dev5" {  
-  ami = "ami-0e86e20dae9224db8"
+  ami = var.amis["us-east-1"]
   instance_type = "t2.micro"
   key_name = "terraform-aws"
   tags = {
@@ -52,7 +52,7 @@ resource "aws_instance" "dev5" {
 
 resource "aws_instance" "dev6" {  
   provider = "aws.us-east-2"
-  ami = "ami-0ea3c35c5c3284d82"
+  ami = var.amis["us-east-2"]
   instance_type = "t2.micro"
   key_name = "terraform-aws"
   tags = {
