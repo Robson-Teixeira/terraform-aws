@@ -7,3 +7,19 @@ variable "amis" {
   }
   description = "description"
 }
+
+variable "cidr_blocks" {
+    type = "list"
+
+    default = ["ip1/porta", "ip2/porta"]
+}
+
+variable "instance_type" {
+    //type = "string" é o padrão
+
+    default = "t2.micro"
+}
+
+variable "key_name" {
+    default = "terraform-aws"
+}

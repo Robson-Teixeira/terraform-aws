@@ -6,7 +6,7 @@ resource "aws_security_group" "acesso-ssh" {
     from_port = 22
     to_port = 22
     protocol = "tcp"
-    cidr_blocks = ["ip1/porta", "ip2/porta"] #IP de saída (https://www.whatismyip.com/)
+    cidr_blocks = var.cidr_blocks #IP de saída (https://www.whatismyip.com/)
   }
 
   tags = {
@@ -23,7 +23,7 @@ resource "aws_security_group" "acesso-ssh-us-east-2" {
     from_port = 22
     to_port = 22
     protocol = "tcp"
-    cidr_blocks = ["ip1/porta", "ip2/porta"] #IP de saída (https://www.whatismyip.com/)
+    cidr_blocks = var.cidr_blocks #IP de saída (https://www.whatismyip.com/)
   }
 
   tags = {
