@@ -27,3 +27,10 @@
 - `terraform show` listar detalhes do ambiente baseado no arquivo _terraform.tfstate_
 - `aws ec2 describe-security-groups` listar security groups
 >Para realização de SSH, selecionar um instância > Connect > (utilizar linha de comando exemplificada no terminal alterando o arquivo .pem para o diretório/arquivo em que se encontra a chave privada)
+
+## Gerenciamento
+- `terraform destroy` remover todos os recursos
+    - `terraform destroy -target <nome.recurso>` remover o recurso especificado, por exemplo, 'aws_instance.dev7'
+>Removendo um recurso com dependência, ambos serão removidos!
+
+>Outra forma de remoção é alterar o(s) arquivo(s) removendo ou comentando os recursos e aplicar as alterações
