@@ -36,3 +36,5 @@
     >Outra forma de remoção é alterar o(s) arquivo(s) removendo ou comentando os recursos e aplicar as alterações
 
 - `terraform refresh` atualizar configurações do ambiente
+
+> Para configuração remota, gerar arquivo _.terraformrc_ com credencial/token do _app.terraform.io_ no home do usuário. Seguir instruções conforme [link](https://developer.hashicorp.com/terraform/language/backend/remote)
